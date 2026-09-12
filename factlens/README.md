@@ -382,5 +382,4 @@ This project stands on the shoulders of the mechanistic-interpretability
 literature: the logit lens (nostalgebraist 2021; Geva et al. 2022), causal
 tracing and ROME (Meng et al. 2022), control tasks (Hewitt & Liang 2019), amnesic
 probing (Elazar et al. 2021), and probing methodology generally (Belinkov 2022).
-See module docstrings for per-file references. Models are accessed through
-[HuggingFace transformers](https://huggingface.co/docs/transformers).
+See module docstrings for per-file references. 
