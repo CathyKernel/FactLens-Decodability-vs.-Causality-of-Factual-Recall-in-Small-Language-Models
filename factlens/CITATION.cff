@@ -4,8 +4,8 @@ title: "FactLens: Decodability vs. Causality of Factual Recall in Small Language
 type: software
 authors:
   - name: FactLens Contributors
-repository-code: "https://github.com/<your-github-username>/factlens"
-url: "https://github.com/<your-github-username>/factlens"
+repository-code: "https://github.com/CathyKernel/FactLens-Decodability-vs.-Causality-of-Factual-Recall-in-Small-Language-Models/tree/main/factlens"
+url: "https://github.com/CathyKernel/FactLens-Decodability-vs.-Causality-of-Factual-Recall-in-Small-Language-Models"
 abstract: >-
   A from-scratch interpretability toolkit for studying where small language
   models store and use factual knowledge: logit lens trajectories, linear
@@ -20,4 +20,3 @@ keywords:
   - activation-patching
   - logit-lens
   - factual-recall
-license: MIT
