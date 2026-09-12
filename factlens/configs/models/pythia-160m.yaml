@@ -1,0 +1,7 @@
+# Pythia-160M — smaller companion for scaling comparisons.
+model:
+  name_or_path: EleutherAI/pythia-160m
+  display_name: Pythia-160M
+  slug: pythia-160m
+  dtype: float32
+  prepend_bos: true

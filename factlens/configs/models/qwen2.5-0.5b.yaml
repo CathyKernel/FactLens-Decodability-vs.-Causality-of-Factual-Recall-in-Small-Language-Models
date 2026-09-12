@@ -1,0 +1,8 @@
+# Qwen2.5-0.5B — modern small model with RMSNorm + SwiGLU + untied head.
+# No BOS token by default in Qwen2 tokenization.
+model:
+  name_or_path: Qwen/Qwen2.5-0.5B
+  display_name: Qwen2.5-0.5B
+  slug: qwen2.5-0.5b
+  dtype: float32
+  prepend_bos: false

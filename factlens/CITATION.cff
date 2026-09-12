@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use FactLens in your work, please cite it."
+title: "FactLens: Decodability vs. Causality of Factual Recall in Small Language Models"
+type: software
+authors:
+  - name: FactLens Contributors
+repository-code: "https://github.com/<your-github-username>/factlens"
+url: "https://github.com/<your-github-username>/factlens"
+abstract: >-
+  A from-scratch interpretability toolkit for studying where small language
+  models store and use factual knowledge: logit lens trajectories, linear
+  probes with Hewitt-Liang control tasks, activation patching, and ROME-style
+  causal tracing, synthesized into the Causal-Probe Gap (CPG) — the site-level
+  disagreement between what is decodable and what is causal.
+keywords:
+  - interpretability
+  - mechanistic-interpretability
+  - language-models
+  - probing
+  - activation-patching
+  - logit-lens
+  - factual-recall
+license: MIT

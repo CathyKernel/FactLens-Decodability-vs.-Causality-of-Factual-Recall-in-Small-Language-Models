@@ -1,0 +1,9 @@
+# Pythia-410M — mid-sized member of the Pythia suite.
+# NOTE: Pythia checkpoints were trained with a BOS token prepended, so we
+# set prepend_bos: true (this matters for both recall quality and span math).
+model:
+  name_or_path: EleutherAI/pythia-410m
+  display_name: Pythia-410M
+  slug: pythia-410m
+  dtype: float32
+  prepend_bos: true

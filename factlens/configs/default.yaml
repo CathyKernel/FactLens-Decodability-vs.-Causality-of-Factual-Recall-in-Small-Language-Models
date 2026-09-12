@@ -1,0 +1,53 @@
+# FactLens — shared defaults. Model configs and experiment configs merge on
+# top of this file (see factlens/config.py for the merge semantics).
+
+seed: 13
+device: cpu                # override with --device cuda or config
+output_root: results
+
+data:
+  relations: null          # null -> every relation in the fact bank
+  limit_per_relation: null # null -> full bank; use --limit for quick runs
+  known_only: true         # restrict lens/patching to facts the model knows
+  known_rank_threshold: 5  # answer token rank < this counts as "known"
+                           # (small models often top-1 " the" above the entity)
+
+lens:
+  align: center            # "center" = mean-centered lens (per-site dataset
+                           # means subtracted pre-norm); "none" = raw lens.
+                           # NOTE: scalar norm "reconciliation" is a no-op —
+                           # LayerNorm/RMSNorm are scale-invariant. See
+                           # factlens/lens/logit_lens.py for the math.
+  topk: [5, 10, 100]       # "answer in top-k" thresholds to track
+
+probe:
+  positions: [subject_end, prompt_end]
+  test_template_idx: -1    # hold out the last template for the test split
+  val_fraction: 0.25
+  epochs: 300
+  lr: 0.001
+  weight_decay: 0.0001
+  batch_size: 64
+  patience: 30
+  bias: true
+
+patch:
+  positions: subject_end   # subject_end | subject_span
+  sites: residual          # residual | residual+sublayers
+  max_facts: null          # null -> all known facts
+
+trace:
+  noise_std_mult: 3.0      # sigma = mult x embedding std (ROME-style)
+  max_facts: 8
+
+cpg:
+  probe_margin: 0.15       # D_read must CROSS chance + margin (upward) for onset
+  patch_margin: 0.2        # C must fall below margin for the routing offset
+  run_length: 2            # onsets/offsets need this many consecutive sites
+
+tracking:
+  tensorboard: false       # JSONL logging is always on
+
+publish:
+  figures: true            # also copy key figures to ./figures/
+  dir: figures

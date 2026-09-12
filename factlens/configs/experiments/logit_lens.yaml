@@ -1,0 +1,4 @@
+_defaults: [../default.yaml, ../models/gpt2.yaml]
+
+experiment:
+  name: logit_lens

@@ -1,0 +1,7 @@
+# GPT-2 Small (124M) — the reference model of the README results.
+model:
+  name_or_path: gpt2
+  display_name: GPT-2 (124M)
+  slug: gpt2
+  dtype: float32
+  prepend_bos: false       # GPT-2 was not trained with a prepended BOS
