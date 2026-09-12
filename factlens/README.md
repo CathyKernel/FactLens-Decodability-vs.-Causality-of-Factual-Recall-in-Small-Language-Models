@@ -110,7 +110,6 @@ Then `run_cpg.py` synthesizes D and C into the gap, onsets, and dormant windows.
 
 ```
 factlens/
-├── factlens/                    # the library (no interpretability dependencies)
 │   ├── data/                    # fact bank, tokenized dataset, control tasks
 │   ├── models/                  # loading + ModuleMap + all hook machinery
 │   ├── lens/                    # from-scratch logit lens (LayerNorm/RMSNorm by hand)
