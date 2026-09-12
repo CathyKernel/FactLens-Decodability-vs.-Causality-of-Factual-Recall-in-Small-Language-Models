@@ -1,6 +1,5 @@
 # FactLens — Decodability vs. Causality of Factual Recall in Small Language Models
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1%2B-orange.svg)](https://pytorch.org/)
 [![transformers](https://img.shields.io/badge/🤗%20transformers-4.40%2B-yellow.svg)](https://huggingface.co/docs/transformers)
