@@ -370,10 +370,9 @@ If you use FactLens in your work, please cite it (BibTeX in
 ```bibtex
 @software{factlens2026,
   title  = {FactLens: Decodability vs. Causality of Factual Recall in Small Language Models},
-  author = {FactLens Contributors},
+  author = {Cathy Li},
   year   = {2026},
-  url    = {https://github.com/<your-github-username>/factlens},
-  license = {MIT}
+  url    = {https://github.com/CathyKernel/FactLens-Decodability-vs.-Causality-of-Factual-Recall-in-Small-Language-Models},
 }
 ```
 
